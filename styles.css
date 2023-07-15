@@ -1,0 +1,108 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: Raleway;
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+}
+body, html {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+body {
+background-color: #0c122c;
+background-image: url(images/bg-desktop.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position:100% 100%;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 2800px) {
+    body {
+      background-image:url("images/bg-desktop.png");
+    }
+  }
+@media (min-width: 320px) and (max-width: 767px) {
+    body {
+      background-image: url("images/bg-mobile.png");
+      background-size: cover;
+    }
+    .fylo {
+        width: 1000px;
+    }
+}
+.canvas {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.fylo {
+    height: 25vmin;
+    width: 44vmin;
+    background-color:#1e2c69;
+    border-radius: 8px 50px 8px 8px;
+    margin-right: 3vmin;
+
+}
+
+.second {
+    height: 19vmin;
+    width: 60vmin;
+    background-color:#1e2c69;
+    padding-bottom: 0;
+    margin-top: 6vmin;
+    border-radius: 10px;
+}
+
+.white {
+  height: 12vmin;  
+  width: 33vmin;
+  background-color: #fffffe;
+  border-radius: 13px;
+  margin: 20vmin auto 0 auto ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+   #gbLeft {
+    font-weight: 700;
+    font-size: 8vmin;
+    margin: 10px;
+   }
+   #left {
+    font-weight: 400;
+    color:hsl(229, 7%, 55%);
+    size:14px ;
+   }
+
+@media (min-width: 320px) and (max-width:767px){
+    .canvas {
+        flex-direction: column;
+    }
+    .fylo {
+        height:52vmin ;
+        width: 86vmin;
+        margin-top: -8vmin;
+        margin-bottom: 0%;
+    }
+    .second {
+        width: 86vmin;
+        height: 34vmin;
+    }
+    .white {
+        height: 20vmin;  
+        width: 48vmin;
+        background-color: #fffffe;
+        border-radius: 13px;
+        margin: 20vmin auto 0 auto ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+}
